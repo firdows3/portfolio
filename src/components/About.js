@@ -53,7 +53,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           style={{ flex: 1 }}
         >
-          <img src={meTwo} className="about-image" alt="my second image" />
+          <img src={meTwo} className="about-image" alt="my second" />
         </motion.div>
       </motion.div>
 

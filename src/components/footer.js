@@ -19,7 +19,7 @@ export default function Footer() {
             gap: "1rem",
           }}
         >
-          <img src={meOne} alt="my first image" />
+          <img src={meOne} alt="my first" />
           <div style={{ color: "rgba(100, 100, 100, .4)", width: 270 }}>
             <div style={{ paddingBottom: "5px" }}>Firdows Bedru</div>
             <div style={{ fontSize: "12px" }}>

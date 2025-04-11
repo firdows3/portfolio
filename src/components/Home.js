@@ -39,7 +39,7 @@ export default function Home({ projects }) {
           initial={{ opacity: 0, x: "-100%" }} // Image starts from the left off-screen
           animate={{ opacity: 1, x: 0 }} // Image moves into its final position
           transition={{ duration: 0.8 }}
-          alt="my first image"
+          alt="my first"
         />
 
         <motion.div
