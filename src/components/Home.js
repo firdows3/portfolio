@@ -195,9 +195,13 @@ export default function Home({ projects }) {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <div style={{ fontSize: "25px" }}>Want to connect?</div>
-        <button className="home-button" style={{ fontSize: "13px" }}>
+        <Link
+          to="/contacts"
+          className="home-button"
+          style={{ fontSize: "13px" }}
+        >
           Contact Me
-        </button>
+        </Link>
       </motion.div>
       <div style={{ paddingBottom: "3%" }}></div>
     </div>

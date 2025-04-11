@@ -11,7 +11,6 @@ export default function About() {
         initial={{ opacity: 0, x: -100 }} // Start content from left
         whileInView={{ opacity: 1, x: 0 }} // Bring it to the center
         transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
         style={{ display: "flex", alignItems: "center" }}
       >
         <div style={{ flex: 1 }}>
