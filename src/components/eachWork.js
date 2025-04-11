@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 
 export default function EachWork({ projects }) {
   const { id } = useParams();
-  const currentProject = projects.filter((project) => id == project.id);
+  const currentProject = projects.filter(
+    (project) => id === project.id.toString()
+  );
 
   return (
     <div className="main-content">

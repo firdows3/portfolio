@@ -11,10 +11,6 @@ import postgresIcon from "./images/postgresql.png";
 import tsIcon from "./images/ts.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
-import photoGallery from "./images/photoGallery.png";
-import carWash from "./images/carWash.png";
-import wahdatalUmmah from "./images/WahdatalUmmahWebsite.png";
-import chatApp from "./images/chatApp.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -43,6 +39,7 @@ export default function Home({ projects }) {
           initial={{ opacity: 0, x: "-100%" }} // Image starts from the left off-screen
           animate={{ opacity: 1, x: 0 }} // Image moves into its final position
           transition={{ duration: 0.8 }}
+          alt="my first image"
         />
 
         <motion.div
@@ -78,28 +75,28 @@ export default function Home({ projects }) {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <div className="home-icon">
-          <img src={htmlIcon} />
+          <img src={htmlIcon} alt="html icon" />
         </div>
         <div className="home-icon">
-          <img src={cssIcon} />
+          <img src={cssIcon} alt="css icon" />
         </div>
         <div className="home-icon">
-          <img src={jsIcon} />
+          <img src={jsIcon} alt="js icon" />
         </div>
         <div className="home-icon">
-          <img src={reactIcon} />
+          <img src={reactIcon} alt="react icon" />
         </div>
         <div className="home-icon">
-          <img src={nodeIcon} />
+          <img src={nodeIcon} alt="node icon" />
         </div>
         <div className="home-icon">
-          <img src={mongodbIcon} />
+          <img src={mongodbIcon} alt="mongodb icon" />
         </div>
         <div className="home-icon">
-          <img src={postgresIcon} />
+          <img src={postgresIcon} alt="postgres icon" />
         </div>
         <div className="home-icon">
-          <img src={tsIcon} />
+          <img src={tsIcon} alt="ts icon" />
         </div>
       </motion.div>
       <motion.div
@@ -110,7 +107,7 @@ export default function Home({ projects }) {
         transition={{ duration: 0.7 }}
       >
         <div className="home-about-section">
-          <img src={meTwo} />
+          <img src={meTwo} alt="my second image" />
           <div className="home-about-section-overlay">
             <div
               style={{

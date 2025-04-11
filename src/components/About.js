@@ -1,4 +1,3 @@
-import meFour from "./images/me4.jpg";
 import meTwo from "./images/me2.jpg";
 import "./styles/about.css";
 import { motion } from "framer-motion";
@@ -54,7 +53,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           style={{ flex: 1 }}
         >
-          <img src={meTwo} className="about-image" />
+          <img src={meTwo} className="about-image" alt="my second image" />
         </motion.div>
       </motion.div>
 

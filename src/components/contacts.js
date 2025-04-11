@@ -76,6 +76,7 @@ export default function Contacts() {
           <a
             target="_blank"
             href="https://www.instagram.com/fird_bedr?igsh=MXZpczNjcjY0ZzFydA=="
+            rel="noreferrer"
           >
             fird_bedr
           </a>
@@ -92,6 +93,7 @@ export default function Contacts() {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/firdows-bedru-252b002a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            rel="noreferrer"
           >
             Firdows Bedru
           </a>
@@ -105,7 +107,11 @@ export default function Contacts() {
           transition={{ duration: 0.6 }}
         >
           <FaGithub style={{ fontSize: "30px" }} />
-          <a target="_blank" href="https://github.com/firdows3">
+          <a
+            target="_blank"
+            href="https://github.com/firdows3"
+            rel="noreferrer"
+          >
             firdows3
           </a>
         </motion.div>

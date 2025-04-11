@@ -46,7 +46,7 @@ export default function Header() {
             <div key={index}>
               <Link
                 className={
-                  item.path == route || item.path.includes(route)
+                  item.path === route || item.path.includes(route)
                     ? "each-header-link active"
                     : "each-header-link"
                 }
