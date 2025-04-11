@@ -1,0 +1,58 @@
+.header-component {
+  width: 100%;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white; /* ensures it doesn't become transparent */
+  z-index: 1000;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0px auto;
+  align-items: center;
+  padding: 20px 0px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 25px;
+}
+.header-right {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+}
+.each-header-link {
+  text-decoration: none;
+  color: #000;
+}
+.active {
+  color: #ebae0f;
+}
+.header-menu-icon {
+  display: none;
+}
+@media (max-width: 600px) {
+  .header-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .header-right {
+    display: none;
+  }
+  .visible-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    background-color: #f7f8e6;
+    width: 200px;
+    right: 7%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    padding: 20px;
+  }
+}
