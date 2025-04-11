@@ -107,7 +107,7 @@ export default function Home({ projects }) {
         transition={{ duration: 0.7 }}
       >
         <div className="home-about-section">
-          <img src={meTwo} alt="my second image" />
+          <img src={meTwo} alt="my second" />
           <div className="home-about-section-overlay">
             <div
               style={{
