@@ -5,6 +5,7 @@ import htmlIcon from "./images/html.webp";
 import cssIcon from "./images/css.webp";
 import jsIcon from "./images/javascript.webp";
 import reactIcon from "./images/React.webp";
+import nextIcon from "./images/next.webp";
 import nodeIcon from "./images/node-js.png";
 import mongodbIcon from "./images/mongodb.png";
 import postgresIcon from "./images/postgresql.png";
@@ -87,6 +88,9 @@ export default function Home({ projects }) {
           <img src={reactIcon} alt="react icon" />
         </div>
         <div className="home-icon">
+          <img src={nextIcon} alt="react icon" />
+        </div>
+        <div className="home-icon">
           <img src={nodeIcon} alt="node icon" />
         </div>
         <div className="home-icon">
@@ -94,9 +98,6 @@ export default function Home({ projects }) {
         </div>
         <div className="home-icon">
           <img src={postgresIcon} alt="postgres icon" />
-        </div>
-        <div className="home-icon">
-          <img src={tsIcon} alt="ts icon" />
         </div>
       </motion.div>
       <motion.div
