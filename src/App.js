@@ -5,48 +5,96 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
-import photoGallery from "./components/images/photoGallery.png";
-import carWash from "./components/images/carWash.png";
-import wahdatalUmmah from "./components/images/WahdatalUmmahWebsite.png";
-import chatApp from "./components/images/chatApp.png";
+import moezBinz from "./components/images/moezBinz.png";
+import moezBinzAbout from "./components/images/moezBinzAbout.png";
+import moezBinzHow from "./components/images/moezBinzHow.png";
+import moezBinzNews from "./components/images/moezBinzNews.png";
+import moezBinzProducts from "./components/images/moezBinzProducts.png";
+import amiDos from "./components/images/amiDos.png";
+import amiDosService from "./components/images/amiDosService.png";
+import amiDosFooter from "./components/images/amiDosFooter.png";
+import amiDosAbout from "./components/images/amiDosAbout.png";
+import amiDosProject from "./components/images/amiDosProject.png";
+import alqalam from "./components/images/alqalam.png";
+import alqalamAbout from "./components/images/alqalamAbout.png";
+import alqalamContact from "./components/images/alqalamContact.png";
+import alqalamEcomm from "./components/images/alqalamEcomm.png";
+import stock from "./components/images/stock.png";
+import stockBankInfo from "./components/images/stockBankInfo.png";
+import stockCredits from "./components/images/stockCredits.png";
+import stockPurchases from "./components/images/stockPurchases.png";
+import stockSales from "./components/images/stockSales.png";
+import stockShop from "./components/images/stockShop.png";
 import EachWork from "./components/eachWork";
 
 function App() {
   const projects = [
     {
       id: 1,
-      title: "Photo Gallery",
-      image: photoGallery,
-      role: "FRONTEND DEVELOPER",
+      title: "Moez Binz Website",
+      image: moezBinz,
+      images: [
+        { img: moezBinzAbout, desc: "About page" },
+        { img: moezBinzHow, desc: "How it Works page" },
+        { img: moezBinzNews, desc: "What's New page" },
+        { img: moezBinzProducts, desc: "Products page" },
+      ],
+      role: "FULL-STACK DEVELOPER",
       description:
-        "Developed a modern and responsive photo gallery application that allows users to browse, filter, and mark their favorite images. Focused on creating a clean, user-friendly interface with smooth transitions and hover effects. The gallery layout adapts seamlessly to various screen sizes, providing an optimal experience on both mobile and desktop. Emphasized accessibility and performance optimization throughout the development process.",
-      youtubeURL: "https://www.youtube.com/embed/UTmuxNeULZQ",
+        "In this project the client wanted a full-stack developer for show casing the company profile and for allowing users to bid on their products. The project need to be fully responsive with a clear and neat code",
+      link: "www.thebinzstore.com",
+      // youtubeURL: "https://www.youtube.com/embed/UTmuxNeULZQ",
     },
     {
       id: 2,
-      title: "Carwash Website",
-      image: carWash,
-      role: "FULL-STACK DEVELOPER",
+      title: "Amidos integrated technologies and security sloutions Website",
+      image: amiDos,
+      images: [
+        { img: amiDosFooter, desc: "Footer of Amidos website" },
+        { img: amiDosAbout, desc: "About us page" },
+        { img: amiDosService, desc: "Services page" },
+        { img: amiDosProject, desc: "Projects page" },
+      ],
+      role: "FRONT-END DEVELOPER",
       description:
-        "Designed and built a fully functional car wash service platform, enabling users to browse available services, make online bookings, and receive instant confirmations. Integrated user authentication and role-based access for customers and admins. The admin dashboard allows for managing bookings, services, and pricing in real time. Employed a mobile-first design approach and ensured secure data handling and smooth navigation across all pages.",
-      youtubeURL: "https://www.youtube.com/embed/a1x8aTRSwS0",
+        "For this website, the client reached me beacuse they wanted a website that show cases the company's profile by exploring their service, projects done and packages. The website needs to have an outstanding UI. ",
+      // youtubeURL: "https://www.youtube.com/embed/a1x8aTRSwS0",
+      link: "https://amidos-nine.vercel.app/",
     },
     {
       id: 3,
-      title: "Wahdatal Ummah Website",
-      image: wahdatalUmmah,
+      title:
+        "Al-Qalam Pre-Primary,Primary and Middle Level School P.L.C. Website",
+      image: alqalam,
+      images: [
+        { img: alqalamAbout, desc: "About us page" },
+        { img: alqalamContact, desc: "Contact us page" },
+        { img: alqalamEcomm, desc: "E-communication page" },
+      ],
       role: "FULL-STACK DEVELOPER",
       description:
-        "An ongoin project aims to create a dynamic, multilingual website for the Wahdatal Ummah community to promote religious awareness and activities. Developed a clean, intuitive design tailored for both youth and older users, and implemented a secure content management system for admins to update content easily.",
-      youtubeURL: "https://www.youtube.com/embed/rKk7fdF1E1w",
+        "In this project the client wanted a website that show cases the company prfile including an e-communication between the teacher and the parent. The project need to be fully responsive with clear and neat code.",
+      // youtubeURL: "https://www.youtube.com/embed/rKk7fdF1E1w",
+      link: "https://alqalam-production.up.railway.app/",
     },
     {
       id: 4,
-      title: "Chat App",
-      image: chatApp,
+      title: "Stock Management System",
+      image: stock,
+      images: [
+        { img: stockSales, desc: "Sales page" },
+        { img: stockShop, desc: "Shop page" },
+        { img: stockPurchases, desc: "Purchased Products page" },
+        { img: stockCredits, desc: "Credits taken or given page" },
+        {
+          img: stockBankInfo,
+          desc: "Bank transactions and bank informations page",
+        },
+      ],
       role: "FULL-STACK DEVELOPER",
       description:
-        "Built a real-time chat application with a focus on smooth user interaction and performance. Users can sign up, log in, search for contacts, and engage in instant messaging. Implemented features like live typing indicators, responsive chat layouts, and persistent chat history. Prioritized data privacy and built the backend to efficiently manage socket connections and user sessions. The app is fully responsive, ensuring usability across all devices.",
+        "In this project the client needed a system for managing stock, sales, purchases and expenses. The project need to be a cleanand fully responsive UI.",
+      link: "https://stock-managment-cash-book-production.up.railway.app/",
     },
   ];
 
